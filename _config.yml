@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 前端时空
+subtitle: '前端网红集结号，传递一线全栈技术，带你穿越前端时空。'
+description: '前端时空技术社群：前端网红集结号，传递一线全栈技术，带你穿越前端时空。微信公众号「前端时空」。'
+keywords: ["前端", "CSS", "HTML", "HTML5", "CSS3", "Vue", "React", "Node", "Koa", "Express", "前端时空"]
+author: 前端时空
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.fest.plus
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -93,7 +93,26 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
+
+plugins: hexo-generate-feed
+
+
+# 文章字数统计
+symbols_count_time:
+	symbols: true
+	time: true
+	total_symbols: true
+  total_time: true
+  
+# 站点地图  
+sitemap:
+    path: sitemap.xml
+    tag: true
+    category: true
+
+baidusitemap:
+path: baidusitemap.xml    
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
